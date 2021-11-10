@@ -16,6 +16,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 # brew install --cask openemu
 # brew install --cask paragon-ntfs
 # brew install --cask plex-media-server
+# brew install --cask rectangle
 # brew install --cask shotcut
 # brew install --cask spotify
 # brew install --cask steam
