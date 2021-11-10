@@ -33,7 +33,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 # brew install docker
 # brew install docker-compose
 # brew install git
-# brew install node
+# brew install -g node
 # brew install python@3.9
 
 # Config
