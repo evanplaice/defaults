@@ -8,6 +8,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 # GUI Applications
 # brew install --cask brave-browser
 # brew install --cask chromium
+# brew install --cask cloudapp
 # brew install --cask discord
 # brew install --cask keepassxc
 # brew install --cask gitkraken
