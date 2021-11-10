@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # install brew
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $HOME/.bash_profile
-eval "$(/opt/homebrew/bin/brew shellenv)"
+# /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+# echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $HOME/.bash_profile
+# eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # GUI Applications
 # brew install --cask brave-browser
