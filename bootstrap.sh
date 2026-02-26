@@ -2,7 +2,7 @@
 
 # Install brew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-echo "export PATH=/opt/homebrew/bin:$PATH" >> ~/.zshrc
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zshrc
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Prereqs
@@ -43,9 +43,17 @@ brew install git
 #  source: https://stackoverflow.com/a/67529751
 brew install nvm
 mkdir ~/.nvm
-export NVM_DIR="$HOME/.nvm" # NVM Install Path
-[ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && . "$(brew --prefix)/opt/nvm/nvm.sh" # This loads nvm
-[ -s "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" ] && . "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
+export NVM_DIR="$HOME/.nvm" # NVM install path
+ # load NVM
+if [ -s "$(brew --prefix)/opt/nvm/nvm.sh" ]; then
+    echo '. "$(brew --prefix)/opt/nvm/nvm.sh"' >> ~/.zshrc
+    . "$(brew --prefix)/opt/nvm/nvm.sh"
+fi
+# load NVM bash completions
+if [ -s "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" ]; then
+    echo '. "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm"' >> ~/.zshrc
+    . "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm"
+fi
 nvm install --lts # Install latest LTS
 
 # NodeJS Globals
