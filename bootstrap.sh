@@ -12,6 +12,7 @@ softwareupdate --install-rosetta
 brew install --cask brave-browser
 brew install --cask chromium
 xattr -cr /Applications/Chromium.app
+brew install --cask claude-code
 # brew install --cask discord
 brew install --cask gitkraken
 # brew install --cask keepassxc # replaced by Strongbox
