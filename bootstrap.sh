@@ -10,7 +10,7 @@ softwareupdate --install-rosetta
 
 # GUI Applications
 brew install --cask brave-browser
-brew install --cask chromium
+brew install --cask ungoogled-chromium
 xattr -cr /Applications/Chromium.app
 brew install --cask claude-code
 # brew install --cask discord
