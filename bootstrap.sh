@@ -20,6 +20,7 @@ brew install --cask gitkraken
 # brew install --cask openemu
 brew install --cask paragon-ntfs
 # brew install --cask plex-media-server
+brew install --cask postman
 brew install --cask rectangle
 brew install --cask shotcut
 brew install --cask slack
