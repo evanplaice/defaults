@@ -40,6 +40,7 @@ brew install chromium
 brew install docker
 brew install docker-compose
 brew install git
+brew install gh
 
 # Install Node
 #  source: https://stackoverflow.com/a/67529751
