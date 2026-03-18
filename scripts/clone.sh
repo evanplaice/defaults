@@ -26,6 +26,7 @@ CLONE_DIR="${CLONE_DIR: }"  # Destination directory
 USE_SSH="${USE_SSH:-false}"        # Set to "true" to clone via SSH instead of HTTPS
 INCLUDE_FORKS="${INCLUDE_FORKS:-false}"   # Set to "true" to include forks
 INCLUDE_ARCHIVED="${INCLUDE_ARCHIVED:-false}" # Set to "true" to include archived repos
+FORKS_ONLY="${FORKS_ONLY:-false}" # Set to "true" to include only forks
 
 # ── Prompt for missing values ─────────────────────────────────────────────────
 
@@ -99,6 +100,15 @@ while read row; do
     CLONE_URL="$SSH_URL"
   else
     CLONE_URL="$HTTPS_URL"
+  fi
+
+  if [[ "$FORKS_ONLY" == "true" && "$FORK" == "true" ]]; then
+    clone_or_pull "$NAME" "$CLONE_URL"
+    continue
+  fi
+
+  if [[ "$FORKS_ONLY" == "true" && "$FORK" == "false" ]]; then
+    continue
   fi
 
   # Apply filters
