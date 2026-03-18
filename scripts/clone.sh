@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 # =============================================================================
 # clone.sh
 # Clones all GitHub repositories for a given user/org (public + private).
@@ -6,11 +6,10 @@
 # Requirements:
 #   - git
 #   - gh
-#   - jq
 #   - A GitHub Personal Access Token (PAT) with the `repo` and 'read:org scopes
 #
 # Usage:
-#   chmod +x .sh
+#   chmod +x clone.sh
 #   ./clone.sh
 #
 # Or pass arguments directly:
