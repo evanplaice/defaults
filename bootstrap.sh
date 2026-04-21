@@ -42,7 +42,15 @@ brew install docker
 brew install docker-compose
 brew install git
 brew install gh
-brew install gpg # test: echo "test" | gpg --clearsign
+
+# GPG Setup
+brew install gpg
+brew install pinentry-mac
+echo 'export GPG_TTY=$(tty)' >> ~/.zshrc
+pinentry-program /opt/homebrew/bin/pinentry-mac
+echo "pinentry-program $(brew --prefix)/bin/pinentry-mac" >> ~/.gnupg/gpg-agent.conf
+gpgconf --kill gpg-agent
+# echo "test" | gpg --clearsign
 
 # Install Node
 #  source: https://stackoverflow.com/a/67529751
