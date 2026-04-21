@@ -37,6 +37,7 @@ brew install --cask warp
 # CLI Applications
 brew install awscli
 brew install chromium
+brew install deno
 brew install docker
 brew install docker-compose
 brew install git
