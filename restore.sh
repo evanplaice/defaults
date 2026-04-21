@@ -34,14 +34,14 @@ clone_or_pull() {
   local github_user="$1"
   local clone_dir="$2"
 
-  echo $GITHUB_TOKEN | GITHUB_USER=$github_user CLONE_DIR=$clone_dir ./scripts/clone.sh 
+  echo $GITHUB_TOKEN | GITHUB_USER=$github_user CLONE_DIR=$clone_dir USE_SSH=true ./scripts/clone.sh 
 }
 
 clone_or_pull_forks() {
   local github_user="$1"
   local clone_dir="$2"
 
-  echo $GITHUB_TOKEN | GITHUB_USER=$github_user CLONE_DIR=$clone_dir FORKS_ONLY=true ./scripts/clone.sh 
+  echo $GITHUB_TOKEN | GITHUB_USER=$github_user CLONE_DIR=$clone_dir FORKS_ONLY=true USE_SSH=true ./scripts/clone.sh 
 }
 
 # ── Main loop ─────────────────────────────────────────────────────────────────
