@@ -42,7 +42,7 @@ brew install docker
 brew install docker-compose
 brew install git
 brew install gh
-brew install gpg
+brew install gpg # test: echo "test" | gpg --clearsign
 
 # Install Node
 #  source: https://stackoverflow.com/a/67529751
