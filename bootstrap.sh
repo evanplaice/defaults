@@ -30,7 +30,7 @@ brew install --cask sublime-text
 brew install --cask transmission
 brew install --cask vagrant
 brew install --cask virtualbox
-brew install --cask visual-studio-code
+brew install --cask vscodium
 brew install --cask vlc
 brew install --cask warp
 
