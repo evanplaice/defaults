@@ -78,6 +78,7 @@ export UV_PYTHON_INSTALL_DIR="$HOME/.uv" # Python Install Path
 uv python install --default # Install latest LTS
 
 # Config
+npm config set ignore-scripts true
 git config --global user.name "Evan Plaice"
 git config --global user.email evanplaice@gmail.com
 git config --global init.defaultBranch "main"
