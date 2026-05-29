@@ -25,7 +25,7 @@ brew install --cask rectangle
 brew install --cask shotcut
 brew install --cask slack
 brew install --cask spotify
-brew install --cask steam
+# brew install --cask steam
 brew install --cask sublime-text
 brew install --cask transmission
 brew install --cask vagrant
