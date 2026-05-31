@@ -51,6 +51,7 @@ xattr -cr /Applications/Chromium.app
 brew install --cask claude-code
 # brew install --cask discord
 # brew install --cask gitkraken
+brew install --cask ghostty
 # brew install --cask keepassxc # replaced by Strongbox
 # brew install --cask libreoffice
 # brew install --cask openemu
