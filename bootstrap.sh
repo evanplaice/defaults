@@ -69,7 +69,6 @@ brew install --cask vagrant
 brew install --cask virtualbox
 brew install --cask vscodium
 brew install --cask vlc
-brew install --cask warp
 
 # CLI Applications
 brew install awscli
